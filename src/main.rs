@@ -1,5 +1,4 @@
 use std::collections::HashMap;
-use std::fmt::{Display, Formatter};
 use std::hash::Hash;
 
 pub trait Valuable {
