@@ -36,18 +36,6 @@ impl PartialEq<Self> for Coin {
     }
 }
 
-impl Display for Coin {
-    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
-        match self {
-            Coin::Penny => write!(f, "penny"),
-            Coin::Nickel => write!(f, "nickel"),
-            Coin::Dime => write!(f, "dime"),
-            Coin::Quarter => write!(f, "quarter"),
-            Coin::Half => write!(f, "half"),
-        }
-    }
-}
-
 fn main() {
     let coins: [Coin; 5] = [Coin::Dime, Coin::Penny, Coin::Quarter, Coin::Nickel, Coin::Half];
     let amount = 22;
